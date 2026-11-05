@@ -6,13 +6,13 @@ from darkapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('about/', views.about),
+    path('about/', views.about, name='about'),
 
-    path('contact/', views.contact),
+    path('contact/', views.contact, name='contact'),
 
-    path('index/', views.index),
+    path('', views.index, name='index'),
 
-    path('services/', views.services),
+    path('services/', views.services, name='services'),
 
     
 ]

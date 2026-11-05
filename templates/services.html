@@ -5,15 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page - DarkFade</title>
 
+    <style>
+
+        img{
+            height: auto;
+        }
+    </style>
+
     {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-    <h1>Our Services</h1>
+    <h1 style="text-align: center;">Our Services</h1>
+
+    <a href="{% url 'about' %}">About Us!</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+    <a href="{% url 'index' %}">Homepage</a>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi id aut in ab repellat deleniti! Accusamus accusantium blanditiis minima perferendis nisi modi molestiae molestias ut, necessitatibus ipsa eveniet perspiciatis!
     Similique omnis dolorum sapiente corrupti nulla. Officia ullam sequi, possimus repudiandae odio qui, aut expedita, ea cupiditate maiores laudantium? Ipsa impedit consectetur iure voluptas deserunt hic atque ab maiores magni.
     Officia saepe odit corporis laudantium pariatur repellendus doloribus, praesentium officiis quam fugiat vel laborum sapiente illo vero similique, consequatur quibusdam facilis quidem repellat? Incidunt, vero? Labore tempore magni nemo fugiat?</p>
 
     <img src="{% static 'images/car.png' %}" alt="The car on the road" width="600">
+
+    <div class="container">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Email Address</th>
+                    <th>Telephone Number</th>
+
+
+
+
+                </tr>
+
+
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark Doe</td>
+                    <td>mark@gmail.com</td>
+                    <td>0789965432</td>
+
+
+                </tr>
+
+                <tr>
+                    <td>Felix Dadivit</td>
+                    <td>felix@gmail.com</td>
+                    <td>0765648312</td>
+
+
+                </tr>
+
+                <tr>
+                    <td>Leone Trops</td>
+                    <td>leone@gmail.com</td>
+                    <td>0765647386</td>
+
+
+
+                </tr>
+
+                <tr>
+                    <td>Jay Celeste</td>
+                    <td>jay@gmail.com</td>
+                    <td>0765647864</td>
+
+
+
+                </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     
 </body>
 </html>
